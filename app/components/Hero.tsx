@@ -4,7 +4,10 @@ import Link from "next/link";
 export default function Hero() {
   return (
     <main className="min-h-screen overflow-hidden bg-[#080807] text-[#E8E0D0]">
-      <section className="relative flex min-h-screen items-center overflow-hidden">
+      <section
+        aria-labelledby="hero-title"
+        className="relative flex min-h-screen items-center overflow-hidden"
+      >
         <div className="absolute left-[70%] top-[45%] h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#C6A15B]/[0.07] blur-[150px]" />
 
         <div className="absolute bottom-[-200px] left-[-100px] h-[450px] w-[450px] rounded-full bg-[#80652F]/[0.05] blur-[130px]" />
@@ -16,14 +19,17 @@ export default function Hero() {
         <div className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-16 px-6 pb-20 pt-32 lg:grid-cols-2 lg:px-10 lg:pb-0 lg:pt-20">
           <div className="max-w-2xl">
             <div className="mb-8 flex items-center gap-4">
-              <span className="h-px w-12 bg-[#C6A15B]" />
+              <span aria-hidden="true" className="h-px w-12 bg-[#C6A15B]" />
 
               <span className="text-[10px] font-medium uppercase tracking-[0.35em] text-[#C6A15B]">
                 A Forbidden Revelation
               </span>
             </div>
 
-            <h1 className="font-serif text-[64px] font-medium leading-[0.84] tracking-[-0.055em] sm:text-[78px] md:text-[92px] lg:text-[104px]">
+            <h1
+              id="hero-title"
+              className="font-serif text-[64px] font-medium leading-[0.84] tracking-[-0.055em] sm:text-[78px] md:text-[92px] lg:text-[104px]"
+            >
               <span className="text-[#E8E0D0]">THE</span>
               <br />
 
@@ -37,8 +43,12 @@ export default function Hero() {
 
             <div className="mt-10 max-w-xl">
               <h2 className="text-xs font-medium uppercase tracking-[0.2em] text-[#C6A15B]">
-                The book leaked from inside the elite.
+                Discover The Buried Reality
               </h2>
+
+              <p className="mt-3 text-xs font-medium uppercase tracking-[0.2em] text-[#8F8A7D]">
+                The book leaked from inside the elite.
+              </p>
 
               <p className="mt-5 text-base leading-7 text-[#8F8A7D] sm:text-lg sm:leading-8">
                 Hidden methods they never intended you to learn.
@@ -55,9 +65,13 @@ export default function Hero() {
               <Link
                 href="/products/the-burried-reality"
                 className="group inline-flex items-center justify-center gap-4 bg-[#C6A15B] px-8 py-4 text-[10px] font-bold uppercase tracking-[0.22em] text-[#080807] transition duration-300 hover:bg-[#E0C27A]"
+                aria-label="Get The Buried Reality book"
               >
                 Get The Book
-                <span className="text-base transition-transform duration-300 group-hover:translate-x-1">
+                <span
+                  aria-hidden="true"
+                  className="text-base transition-transform duration-300 group-hover:translate-x-1"
+                >
                   →
                 </span>
               </Link>
@@ -72,7 +86,7 @@ export default function Hero() {
                 <p className="mt-1.5 text-sm text-[#B8B0A0]">Jonas Riven</p>
               </div>
 
-              <div className="h-8 w-px bg-[#C6A15B]/10" />
+              <div aria-hidden="true" className="h-8 w-px bg-[#C6A15B]/10" />
 
               <div>
                 <p className="text-[8px] uppercase tracking-[0.25em] text-[#625E55]">
@@ -82,7 +96,7 @@ export default function Hero() {
                 <p className="mt-1.5 text-sm text-[#B8B0A0]">First Release</p>
               </div>
 
-              <div className="h-8 w-px bg-[#C6A15B]/10" />
+              <div aria-hidden="true" className="h-8 w-px bg-[#C6A15B]/10" />
 
               <div>
                 <p className="text-[8px] uppercase tracking-[0.25em] text-[#625E55]">
@@ -94,18 +108,25 @@ export default function Hero() {
             </div>
           </div>
 
-          <div
+          <section
             id="book"
+            aria-label="The Buried Reality book cover"
             className="relative flex min-h-[550px] items-center justify-center lg:min-h-[700px]"
           >
             <div className="group relative w-[400px] rotate-[-6deg] transition-all duration-700 hover:rotate-[-2deg] sm:w-[500px] lg:w-[600px]">
-              <div className="absolute left-1/2 top-1/2 h-[75%] w-[75%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#C6A15B]/20 blur-[100px]" />
+              <div
+                aria-hidden="true"
+                className="absolute left-1/2 top-1/2 h-[75%] w-[75%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#C6A15B]/20 blur-[100px]"
+              />
 
-              <div className="absolute left-1/2 top-[55%] h-[70%] w-[55%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-black/80 blur-[70px]" />
+              <div
+                aria-hidden="true"
+                className="absolute left-1/2 top-[55%] h-[70%] w-[55%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-black/80 blur-[70px]"
+              />
 
               <Image
                 src="/e-book1.webp"
-                alt="The Buried Reality by Jonas Riven"
+                alt="The Buried Reality book by Jonas Riven"
                 width={800}
                 height={1200}
                 priority
@@ -114,17 +135,17 @@ export default function Hero() {
             </div>
 
             <div className="absolute bottom-4 right-0 max-w-[230px] border-l border-[#C6A15B]/50 pl-5 sm:right-2 lg:bottom-8">
-              <p className="font-serif text-lg italic leading-6 text-[#A9A190]">
+              <blockquote className="font-serif text-lg italic leading-6 text-[#A9A190]">
                 “The truth was never lost.
                 <br />
                 It was buried.”
-              </p>
+              </blockquote>
 
               <p className="mt-3 text-[8px] uppercase tracking-[0.28em] text-[#625E55]">
                 — Jonas Riven
               </p>
             </div>
-          </div>
+          </section>
         </div>
 
         <div className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 items-center gap-4 md:flex">
@@ -132,7 +153,10 @@ export default function Hero() {
             Scroll to uncover
           </span>
 
-          <div className="h-10 w-px bg-gradient-to-b from-[#C6A15B]/40 to-transparent" />
+          <div
+            aria-hidden="true"
+            className="h-10 w-px bg-gradient-to-b from-[#C6A15B]/40 to-transparent"
+          />
         </div>
       </section>
     </main>

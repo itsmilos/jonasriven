@@ -2,13 +2,23 @@ import Image from "next/image";
 
 export default function InsideBook() {
   return (
-    <section className="bg-[#080807] px-4 py-20 sm:px-6 lg:px-8">
+    <section
+      id="inside-book"
+      aria-labelledby="inside-book-title"
+      className="bg-[#080807] px-4 py-20 sm:px-6 lg:px-8"
+    >
       <div className="relative mx-auto max-w-[1100px] overflow-hidden border border-[#C6A15B]/30 bg-[#090908] px-8 py-12 shadow-[0_0_80px_rgba(198,161,91,0.05)] sm:px-12 sm:py-16 lg:px-14 lg:py-20">
-        <div className="pointer-events-none absolute right-[-10%] top-1/2 h-[500px] w-[500px] -translate-y-1/2 rounded-full bg-[#C6A15B]/[0.05] blur-[140px]" />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute right-[-10%] top-1/2 h-[500px] w-[500px] -translate-y-1/2 rounded-full bg-[#C6A15B]/[0.05] blur-[140px]"
+        />
 
         <div className="relative z-10 grid items-center gap-14 lg:grid-cols-[1.1fr_0.9fr] lg:gap-20">
           <div>
-            <h2 className="text-4xl font-bold tracking-[-0.03em] text-[#E8E0D0] sm:text-5xl">
+            <h2
+              id="inside-book-title"
+              className="text-4xl font-bold tracking-[-0.03em] text-[#E8E0D0] sm:text-5xl"
+            >
               Inside <span className="text-[#C6A15B]">The Buried Reality</span>
             </h2>
 
@@ -44,19 +54,26 @@ export default function InsideBook() {
           </div>
 
           <div className="relative flex justify-center lg:justify-end">
-            <div className="absolute left-1/2 top-1/2 h-[80%] w-[75%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#C6A15B]/10 blur-[90px]" />
+            <div
+              aria-hidden="true"
+              className="absolute left-1/2 top-1/2 h-[80%] w-[75%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#C6A15B]/10 blur-[90px]"
+            />
 
-            <div className="relative z-10 w-full max-w-[340px] overflow-hidden border-2 border-[#80652F] bg-[#080807] p-[3px] shadow-[0_25px_60px_rgba(0,0,0,0.8)]">
+            <figure className="relative z-10 w-full max-w-[340px] overflow-hidden border-2 border-[#80652F] bg-[#080807] p-[3px] shadow-[0_25px_60px_rgba(0,0,0,0.8)]">
               <div className="overflow-hidden border border-[#C6A15B]/50">
                 <Image
                   src="/TableOfContents.webp"
-                  alt="The Buried Reality by Jonas Riven"
+                  alt="Table of contents from The Buried Reality by Jonas Riven"
                   width={800}
                   height={1200}
                   className="h-auto w-full object-cover"
                 />
               </div>
-            </div>
+
+              <figcaption className="sr-only">
+                Table of contents from The Buried Reality by Jonas Riven.
+              </figcaption>
+            </figure>
           </div>
         </div>
       </div>
