@@ -2,6 +2,7 @@ import BookCTA from "./components/BookCTA";
 import Description from "./components/Description";
 import FacebookPost from "./components/FacebookPost";
 import Hero from "./components/Hero";
+import RecentActivity from "./components/RecentActivity";
 import Testimonials from "./components/Testimonials";
 
 export default function Home() {
@@ -12,6 +13,7 @@ export default function Home() {
       <Testimonials />
       <BookCTA />
       <FacebookPost />
+      <RecentActivity />
     </>
   );
 }
