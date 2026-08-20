@@ -61,7 +61,7 @@ export default function BookCTA() {
 
             <div className="mt-10">
               <Link
-                href="/products/the-burried-reality"
+                href="/products/the-buried-reality"
                 className="group inline-flex items-center gap-5 border border-[#D5B568] bg-gradient-to-r from-[#B28A3D] via-[#D5B568] to-[#E0C27A] px-10 py-5 text-[10px] font-bold uppercase tracking-[0.2em] text-[#080807] shadow-[0_10px_35px_rgba(198,161,91,0.18)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_15px_50px_rgba(198,161,91,0.3)]"
               >
                 <span>Get The Book</span>

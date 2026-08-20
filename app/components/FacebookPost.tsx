@@ -150,7 +150,7 @@ export default function FacebookPost() {
             <div className="pointer-events-none absolute bottom-[105px] left-0 h-36 w-full bg-gradient-to-t from-[#11110F] via-[#11110F]/90 to-transparent" />
 
             <Link
-              href="/products/the-burried-reality"
+              href="/products/the-buried-reality"
               className="group relative z-10 mt-8 flex w-full items-center justify-center gap-3 bg-gradient-to-r from-[#B28A3D] via-[#D5B568] to-[#E0C27A] py-4 text-[11px] font-bold uppercase tracking-[0.22em] text-[#080807] shadow-[0_10px_35px_rgba(198,161,91,0.15)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_15px_50px_rgba(198,161,91,0.3)] lg:py-5 lg:text-xs"
             >
               Read The Buried Reality

@@ -86,7 +86,7 @@ export default function Description() {
 
               <div className="mt-7 flex justify-center">
                 <Link
-                  href="/products/the-burried-reality"
+                  href="/products/the-buried-reality"
                   aria-label="Read The Buried Reality by Jonas Riven"
                   className="group inline-flex items-center gap-4 bg-gradient-to-r from-[#B28A3D] via-[#D5B568] to-[#E0C27A] px-8 py-4 text-[9px] font-bold uppercase tracking-[0.22em] text-[#080807] shadow-[0_10px_35px_rgba(198,161,91,0.15)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_15px_50px_rgba(198,161,91,0.3)]"
                 >

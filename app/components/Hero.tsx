@@ -63,7 +63,7 @@ export default function Hero() {
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <Link
-                href="/products/the-burried-reality"
+                href="/products/the-buried-reality"
                 className="group inline-flex items-center justify-center gap-4 bg-[#C6A15B] px-8 py-4 text-[10px] font-bold uppercase tracking-[0.22em] text-[#080807] transition duration-300 hover:bg-[#E0C27A]"
                 aria-label="Get The Buried Reality book"
               >
