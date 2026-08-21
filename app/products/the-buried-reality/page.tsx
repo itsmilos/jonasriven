@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "The Buried Reality — Digital Edition",
+    title: "The Buried Reality — Jonas Riven",
     description: "Discover The Buried Reality by Jonas Riven.",
     url: "https://jonasriven.com/products/the-buried-reality",
     images: [
