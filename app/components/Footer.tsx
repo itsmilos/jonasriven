@@ -12,7 +12,7 @@ export default function Footer() {
               href="/"
               className="inline-block font-serif text-xl tracking-[-0.02em] text-[#E8E0D0]"
             >
-              The Buried Reality
+              Reality Without Witnesses
             </Link>
 
             <p className="mt-4 max-w-sm text-sm leading-7 text-[#625E55]">
@@ -102,7 +102,7 @@ export default function Footer() {
 
         <div className="flex flex-col gap-4 py-7 sm:flex-row sm:items-center sm:justify-between">
           <p className="text-[8px] uppercase tracking-[0.25em] text-[#4F4B44]">
-            © {new Date().getFullYear()} The Buried Reality. All rights
+            © {new Date().getFullYear()} Reality Without Witnesses. All rights
             reserved.
           </p>
 

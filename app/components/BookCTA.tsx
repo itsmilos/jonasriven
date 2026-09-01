@@ -22,8 +22,8 @@ export default function BookCTA() {
               <div className="relative overflow-hidden border-2 border-[#80652F] bg-[#080807] p-[3px] shadow-[0_25px_70px_rgba(0,0,0,0.8)]">
                 <div className="relative overflow-hidden border border-[#C6A15B]/60">
                   <Image
-                    src="/e-book1.webp"
-                    alt="The Buried Reality by Jonas Riven"
+                    src="/proof.webp"
+                    alt="Reality Without Witnesses by Jonas Riven"
                     width={800}
                     height={1200}
                     priority
@@ -49,7 +49,7 @@ export default function BookCTA() {
               History —
               <br />
               <span className="bg-gradient-to-r from-[#B28A3D] via-[#E0C27A] to-[#C6A15B] bg-clip-text text-transparent">
-                The Buried Reality.
+                Reality Without Witnesses Is Available To The Public.
               </span>
             </h2>
 
@@ -61,7 +61,7 @@ export default function BookCTA() {
 
             <div className="mt-10">
               <Link
-                href="/products/the-buried-reality"
+                href="/products/reality-without-witnesses"
                 className="group inline-flex items-center gap-5 border border-[#D5B568] bg-gradient-to-r from-[#B28A3D] via-[#D5B568] to-[#E0C27A] px-10 py-5 text-[10px] font-bold uppercase tracking-[0.2em] text-[#080807] shadow-[0_10px_35px_rgba(198,161,91,0.18)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_15px_50px_rgba(198,161,91,0.3)]"
               >
                 <span>Get The Book</span>
@@ -76,7 +76,7 @@ export default function BookCTA() {
               <span className="h-px w-10 bg-[#C6A15B]/40" />
 
               <span className="text-[8px] uppercase tracking-[0.3em] text-[#625E55]">
-                Jonas Riven · The Buried Reality
+                Jonas Riven · Reality Without Witnesses
               </span>
             </div>
           </div>

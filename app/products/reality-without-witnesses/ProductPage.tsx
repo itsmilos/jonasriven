@@ -38,8 +38,8 @@ export default function ProductPage() {
               <div className="relative overflow-hidden border border-[#80652F] bg-[#080807] p-[4px] shadow-[0_30px_90px_rgba(0,0,0,0.8)]">
                 <div className="relative overflow-hidden border border-[#C6A15B]/50">
                   <img
-                    src="/e-book2.webp"
-                    alt="The Buried Reality by Jonas Riven"
+                    src="/ebook22.webp"
+                    alt="Reality Without Witnesses by Jonas Riven"
                     className="h-auto w-full object-cover"
                   />
 
@@ -55,10 +55,10 @@ export default function ProductPage() {
             </p>
 
             <h1 className="mt-5 max-w-2xl font-serif text-5xl font-medium leading-[0.95] tracking-[-0.04em] text-[#E8E0D0] sm:text-6xl lg:text-[68px]">
-              The Buried
+              Reality Without
               <br />
               <span className="bg-gradient-to-r from-[#B28A3D] via-[#E0C27A] to-[#C6A15B] bg-clip-text text-transparent">
-                Reality
+                Witnesses
               </span>
             </h1>
 
@@ -108,7 +108,7 @@ export default function ProductPage() {
               rel="noopener noreferrer"
               className="group mt-12 flex w-full items-center justify-center gap-4 border border-[#D5B568] bg-gradient-to-r from-[#B28A3D] via-[#D5B568] to-[#E0C27A] px-8 py-5 text-[10px] font-bold uppercase tracking-[0.25em] text-[#080807] shadow-[0_10px_35px_rgba(198,161,91,0.15)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_55px_rgba(198,161,91,0.3)]"
             >
-              <span>Read The Buried Reality</span>
+              <span>Read Reality Without Witnesses</span>
 
               <span className="text-lg transition-transform duration-300 group-hover:translate-x-1">
                 →

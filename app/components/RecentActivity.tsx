@@ -77,8 +77,8 @@ export default function RecentActivity() {
       <div className="flex items-center gap-4 border border-[#C6A15B]/20 bg-[#0C0B09]/95 p-3 shadow-[0_15px_50px_rgba(0,0,0,0.7)] backdrop-blur-md">
         <div className="relative h-30 w-20 shrink-0 overflow-hidden border border-[#C6A15B]/30">
           <Image
-            src="/e-book1.webp"
-            alt="The Buried Reality"
+            src="/ebook11.webp"
+            alt="Reality Without Witnesses"
             fill
             sizes="100px"
             className="object-cover"

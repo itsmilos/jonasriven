@@ -19,16 +19,16 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://jonasriven.com"),
 
   title: {
-    default: "The Buried Reality — Jonas Riven",
+    default: "Reality Without Witnesses — Jonas Riven",
     template: "%s | Jonas Riven",
   },
 
   description:
-    "The Buried Reality by Jonas Riven — discover the hidden truths beneath the reality we think we know.",
+    "Reality Without Witnesses by Jonas Riven — discover the hidden truths beneath the reality we think we know.",
 
   keywords: [
-    "The Buried Reality",
-    "The Buried Reality book",
+    "Reality Without Witnesses",
+    "Reality Without Witnesses book",
     "Jonas Riven",
     "Jonas Riven book",
   ],
@@ -47,28 +47,28 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "The Buried Reality — Jonas Riven",
+    title: "Reality Without Witnesses — Jonas Riven",
     description:
-      "Discover The Buried Reality by Jonas Riven — a journey into the hidden truths beneath the reality we think we know.",
+      "Discover Reality Without Witnesses by Jonas Riven — a journey into the hidden truths beneath the reality we think we know.",
     url: "https://jonasriven.com",
     siteName: "Jonas Riven",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "/e-book2.webp",
+        url: "/ebook22.webp",
         width: 1200,
         height: 630,
-        alt: "The Buried Reality by Jonas Riven",
+        alt: "Reality Without Witnesses by Jonas Riven",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "The Buried Reality — Jonas Riven",
-    description: "Discover The Buried Reality by Jonas Riven.",
-    images: ["/e-book2.webp"],
+    title: "Reality Without Witnesses — Jonas Riven",
+    description: "Discover Reality Without Witnesses by Jonas Riven.",
+    images: ["/ebook22.webp"],
   },
 
   robots: {

@@ -19,14 +19,15 @@ export default function InsideBook() {
               id="inside-book-title"
               className="text-4xl font-bold tracking-[-0.03em] text-[#E8E0D0] sm:text-5xl"
             >
-              Inside <span className="text-[#C6A15B]">The Buried Reality</span>
+              Inside{" "}
+              <span className="text-[#C6A15B]">Reality Without Witnesses</span>
             </h2>
 
             <div className="mt-8 space-y-6 text-base leading-7 text-[#A9A190] sm:text-lg">
               <p>
                 These are the chapters of{" "}
                 <span className="font-serif italic text-[#E8E0D0]">
-                  The Buried Reality
+                  Reality Without Witnesses
                 </span>
                 . And no — this isn&apos;t clickbait. Every chapter takes you
                 deeper into the knowledge Jonas Riven claims was never meant to

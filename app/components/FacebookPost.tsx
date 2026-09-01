@@ -24,8 +24,8 @@ export default function FacebookPost() {
             <div className="relative overflow-hidden border-2 border-[#80652F] bg-[#080807] p-[4px] shadow-[0_30px_90px_rgba(0,0,0,0.85)]">
               <div className="relative overflow-hidden border border-[#C6A15B]/60">
                 <Image
-                  src="/e-book2.webp"
-                  alt="The Buried Reality by Jonas Riven"
+                  src="/ebook22.webp"
+                  alt="Reality Without Witnesses by Jonas Riven"
                   width={800}
                   height={1200}
                   priority
@@ -60,7 +60,7 @@ export default function FacebookPost() {
               </div>
 
               <span className="hidden text-[9px] uppercase tracking-[0.3em] text-[#625E55] sm:block">
-                #THEBURIEDREALITY
+                #REALITYWITHOUTWITNESSES
               </span>
             </div>
 
@@ -77,34 +77,35 @@ export default function FacebookPost() {
             <div className="custom-scroll mt-8 h-[520px] overflow-y-auto pr-4 font-serif text-[15px] leading-[1.95] text-[#E8E0D0] sm:text-base lg:h-[640px] lg:pr-6">
               <p>
                 It’s been several hours since I finished{" "}
-                <em>The Buried Reality</em>, and I still can’t get this book out
-                of my head. I tried going back to my normal routine. Coffee.
-                Work. Messages. Watching something with my wife. Nothing worked.
-                So I started researching the man who supposedly wrote it. His
-                name is Jonas Riven. And almost nothing about him exists.
-                According to the story surrounding the book, Riven spent years
-                inside an extremely private organization connected to some of
-                the wealthiest and most influential circles in the world. People
-                call it Masonic. Riven suggests Freemasonry was only the outer
-                layer. He supposedly climbed high enough to discover something
-                most members themselves never learn: The people we think control
-                the world aren’t necessarily the people at the top. Presidents.
-                Billionaires. Corporations. Celebrities. Riven describes them as
-                people standing on a stage. His book is about the people who
-                supposedly built the stage. And their greatest weapon isn't
-                money. It's understanding human behavior. Fear. Desire.
-                Attention. Belief. Status. Symbols. Riven claims that if you
-                understand those things deeply enough, you don’t need to force
-                people to do anything. You can make them believe the decision
-                was theirs. That sentence alone made me put the book down. But
-                it gets much stranger. Riven describes moving through different
-                levels of this organization and slowly realizing that almost
-                nobody inside understands the entire structure. He compares it
-                to a giant building. Every member receives the key to one room.
-                They spend their lives believing that room is the building. Only
-                a handful possess the keys to every door. Riven claims he
-                eventually became one of them. And what he found behind those
-                final doors became <em>The Buried Reality.</em>
+                <em>Reality Without Witnesses</em>, and I still can’t get this
+                book out of my head. I tried going back to my normal routine.
+                Coffee. Work. Messages. Watching something with my wife. Nothing
+                worked. So I started researching the man who supposedly wrote
+                it. His name is Jonas Riven. And almost nothing about him
+                exists. According to the story surrounding the book, Riven spent
+                years inside an extremely private organization connected to some
+                of the wealthiest and most influential circles in the world.
+                People call it Masonic. Riven suggests Freemasonry was only the
+                outer layer. He supposedly climbed high enough to discover
+                something most members themselves never learn: The people we
+                think control the world aren’t necessarily the people at the
+                top. Presidents. Billionaires. Corporations. Celebrities. Riven
+                describes them as people standing on a stage. His book is about
+                the people who supposedly built the stage. And their greatest
+                weapon isn't money. It's understanding human behavior. Fear.
+                Desire. Attention. Belief. Status. Symbols. Riven claims that if
+                you understand those things deeply enough, you don’t need to
+                force people to do anything. You can make them believe the
+                decision was theirs. That sentence alone made me put the book
+                down. But it gets much stranger. Riven describes moving through
+                different levels of this organization and slowly realizing that
+                almost nobody inside understands the entire structure. He
+                compares it to a giant building. Every member receives the key
+                to one room. They spend their lives believing that room is the
+                building. Only a handful possess the keys to every door. Riven
+                claims he eventually became one of them. And what he found
+                behind those final doors became{" "}
+                <em>Reality Without Witnesses.</em>
               </p>
 
               <p className="mt-8">
@@ -134,7 +135,7 @@ export default function FacebookPost() {
                 Eventually, someone noticed. According to the story, that was
                 when Jonas Riven disappeared from his old life. But before doing
                 so, he broke his oath. He put what he knew into a book.{" "}
-                <strong>The Buried Reality.</strong> Maybe Jonas Riven is
+                <strong>Reality Without Witnesses.</strong> Maybe Jonas Riven is
                 exactly who he claims to be. Maybe the entire story is fiction.
                 Maybe that isn't even his real name. After reading the book, I'm
                 not sure that matters. Because the question it left me with is
@@ -150,10 +151,10 @@ export default function FacebookPost() {
             <div className="pointer-events-none absolute bottom-[105px] left-0 h-36 w-full bg-gradient-to-t from-[#11110F] via-[#11110F]/90 to-transparent" />
 
             <Link
-              href="/products/the-buried-reality"
+              href="/products/reality-without-witnesses"
               className="group relative z-10 mt-8 flex w-full items-center justify-center gap-3 bg-gradient-to-r from-[#B28A3D] via-[#D5B568] to-[#E0C27A] py-4 text-[11px] font-bold uppercase tracking-[0.22em] text-[#080807] shadow-[0_10px_35px_rgba(198,161,91,0.15)] transition-all duration-300 hover:-translate-y-0.5 hover:shadow-[0_15px_50px_rgba(198,161,91,0.3)] lg:py-5 lg:text-xs"
             >
-              Read The Buried Reality
+              Read Reality Without Witnesses
               <span className="text-base transition-transform duration-300 group-hover:translate-x-1">
                 →
               </span>

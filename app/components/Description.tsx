@@ -61,8 +61,8 @@ export default function Description() {
               <figure className="relative border-2 border-[#80652F] bg-[#080807] p-[4px] shadow-[0_30px_80px_rgba(0,0,0,0.8)]">
                 <div className="overflow-hidden border border-[#C6A15B]/50">
                   <Image
-                    src="/e-book1.webp"
-                    alt="The Buried Reality book cover by Jonas Riven"
+                    src="/ebook11.webp"
+                    alt="Reality Without Witnesses book cover by Jonas Riven"
                     width={800}
                     height={1200}
                     className="h-auto w-full object-cover"
@@ -70,7 +70,7 @@ export default function Description() {
                 </div>
 
                 <figcaption className="sr-only">
-                  The Buried Reality by Jonas Riven.
+                  Reality Without Witnesses by Jonas Riven.
                 </figcaption>
               </figure>
 
@@ -80,14 +80,14 @@ export default function Description() {
                 </p>
 
                 <p className="mt-2 font-serif text-sm italic text-[#A9A190]">
-                  The Buried Reality
+                  Reality Without Witnesses
                 </p>
               </div>
 
               <div className="mt-7 flex justify-center">
                 <Link
-                  href="/products/the-buried-reality"
-                  aria-label="Read The Buried Reality by Jonas Riven"
+                  href="/products/reality-without-witnesses"
+                  aria-label="Read Reality Without Witnesses by Jonas Riven"
                   className="group inline-flex items-center gap-4 bg-gradient-to-r from-[#B28A3D] via-[#D5B568] to-[#E0C27A] px-8 py-4 text-[9px] font-bold uppercase tracking-[0.22em] text-[#080807] shadow-[0_10px_35px_rgba(198,161,91,0.15)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_15px_50px_rgba(198,161,91,0.3)]"
                 >
                   Read The Book
@@ -240,8 +240,8 @@ export default function Description() {
                   </h3>
 
                   <p className="mt-4 leading-7">
-                    <em>The Buried Reality</em> contains what I was sworn never
-                    to reveal.
+                    <em>Reality Without Witnesses</em> contains what I was sworn
+                    never to reveal.
                   </p>
                 </div>
 
@@ -251,8 +251,8 @@ export default function Description() {
                   </p>
 
                   <Link
-                    href="/products/the-burried-reality"
-                    aria-label="Discover The Buried Reality by Jonas Riven"
+                    href="/products/reality-without-witnesses"
+                    aria-label="Discover Reality Without Witnesses by Jonas Riven"
                     className="mt-6 inline-flex items-center gap-4 border border-[#C6A15B]/30 px-7 py-3 text-[9px] font-bold uppercase tracking-[0.25em] text-[#C6A15B] transition-all duration-300 hover:border-[#C6A15B]/60 hover:bg-[#C6A15B]/[0.05]"
                   >
                     Discover The Book
@@ -271,7 +271,7 @@ export default function Description() {
           />
 
           <p className="mt-6 text-[8px] uppercase tracking-[0.35em] text-[#625E55]">
-            The Buried Reality · Jonas Riven
+            Reality Without Witnesses · Jonas Riven
           </p>
         </footer>
       </div>

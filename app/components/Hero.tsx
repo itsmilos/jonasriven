@@ -43,7 +43,7 @@ export default function Hero() {
 
             <div className="mt-10 max-w-xl">
               <h2 className="text-xs font-medium uppercase tracking-[0.2em] text-[#C6A15B]">
-                Discover The Buried Reality
+                Discover Reality Without Witnesses, the book they tried to bury.
               </h2>
 
               <p className="mt-3 text-xs font-medium uppercase tracking-[0.2em] text-[#8F8A7D]">
@@ -63,9 +63,9 @@ export default function Hero() {
 
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <Link
-                href="/products/the-buried-reality"
+                href="/products/reality-without-witnesses"
                 className="group inline-flex items-center justify-center gap-4 bg-[#C6A15B] px-8 py-4 text-[10px] font-bold uppercase tracking-[0.22em] text-[#080807] transition duration-300 hover:bg-[#E0C27A]"
-                aria-label="Get The Buried Reality book"
+                aria-label="Get Reality Without Witnesses book"
               >
                 Get The Book
                 <span
@@ -125,8 +125,8 @@ export default function Hero() {
               />
 
               <Image
-                src="/e-book1.webp"
-                alt="The Buried Reality book by Jonas Riven"
+                src="/ebook11.webp"
+                alt="Reality Without Witnesses book by Jonas Riven"
                 width={800}
                 height={1200}
                 priority
