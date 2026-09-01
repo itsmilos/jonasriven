@@ -30,14 +30,14 @@ export default function Hero() {
               id="hero-title"
               className="font-serif text-[64px] font-medium leading-[0.84] tracking-[-0.055em] sm:text-[78px] md:text-[92px] lg:text-[104px]"
             >
-              <span className="text-[#E8E0D0]">THE</span>
+              <span className="text-[#E8E0D0]">REALITY</span>
               <br />
 
-              <span className="text-[#E8E0D0]">BURIED</span>
+              <span className="text-[#E8E0D0]">WITHOUT</span>
               <br />
 
               <span className="bg-gradient-to-r from-[#80652F] via-[#E0C27A] to-[#9A7938] bg-clip-text text-transparent">
-                REALITY
+                WITNESSES
               </span>
             </h1>
 
