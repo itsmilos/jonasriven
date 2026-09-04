@@ -103,7 +103,7 @@ export default function ProductPage() {
             </div>
 
             <a
-              href="YOUR_CHECKOUT_LINK"
+              href="https://polar.sh/checkout/polar_c_qcjEEGjza5V0AF7rRqmo6zTEiWRcRKGQ650ES4JH5wC"
               target="_blank"
               rel="noopener noreferrer"
               className="group mt-12 flex w-full items-center justify-center gap-4 border border-[#D5B568] bg-gradient-to-r from-[#B28A3D] via-[#D5B568] to-[#E0C27A] px-8 py-5 text-[10px] font-bold uppercase tracking-[0.25em] text-[#080807] shadow-[0_10px_35px_rgba(198,161,91,0.15)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_55px_rgba(198,161,91,0.3)]"
