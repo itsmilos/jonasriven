@@ -2,6 +2,7 @@
 
 import InsideBook from "@/app/components/InsideBook";
 import { useState, useEffect } from "react";
+import Script from "next/script";
 
 export default function ProductPage() {
   const [viewers, setViewers] = useState(24);
@@ -21,6 +22,15 @@ export default function ProductPage() {
 
   return (
     <>
+      <Script
+        src="https://gumroad.com/js/gumroad.js"
+        strategy="afterInteractive"
+      />
+
+      <section>...</section>
+
+      <InsideBook />
+
       <section className="relative min-h-screen overflow-hidden bg-[#0B0A08] py-24 sm:py-28">
         <div className="pointer-events-none absolute left-[-15%] top-1/2 h-[600px] w-[600px] -translate-y-1/2 rounded-full bg-[#C6A15B]/[0.06] blur-[160px]" />
 
@@ -103,10 +113,8 @@ export default function ProductPage() {
             </div>
 
             <a
-              href="https://polar.sh/checkout/polar_c_qcjEEGjza5V0AF7rRqmo6zTEiWRcRKGQ650ES4JH5wC"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group mt-12 flex w-full items-center justify-center gap-4 border border-[#D5B568] bg-gradient-to-r from-[#B28A3D] via-[#D5B568] to-[#E0C27A] px-8 py-5 text-[10px] font-bold uppercase tracking-[0.25em] text-[#080807] shadow-[0_10px_35px_rgba(198,161,91,0.15)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_55px_rgba(198,161,91,0.3)]"
+              href="https://jonasriven.gumroad.com/l/realitywithoutwitnesses"
+              className="gumroad-button group mt-12 flex w-full items-center justify-center gap-4 border border-[#D5B568] bg-gradient-to-r from-[#B28A3D] via-[#D5B568] to-[#E0C27A] px-8 py-5 text-[10px] font-bold uppercase tracking-[0.25em] text-[#080807] shadow-[0_10px_35px_rgba(198,161,91,0.15)] transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_55px_rgba(198,161,91,0.3)]"
             >
               <span>Read Reality Without Witnesses</span>
 
