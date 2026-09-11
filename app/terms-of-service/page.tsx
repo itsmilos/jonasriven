@@ -42,7 +42,7 @@ export default function TermsOfService() {
             </h2>
 
             <p>
-              The Buried Reality provides information about and access to
+              Reality Without Witnesses provides information about and access to
               digital products, including the e-book titled{" "}
               <em>The Buried Reality</em> by Jonas Riven.
             </p>
@@ -311,7 +311,7 @@ export default function TermsOfService() {
             href="/"
             className="text-[9px] uppercase tracking-[0.3em] text-[#625E55] transition-colors hover:text-[#C6A15B]"
           >
-            ← Back to The Buried Reality
+            ← Back to Homepage
           </a>
         </div>
       </div>

@@ -23,8 +23,8 @@ export default function RefundPolicy() {
             </h2>
 
             <p>
-              The Buried Reality is a digital product delivered electronically
-              after purchase.
+              Reality Without Witnesses is a digital product delivered
+              electronically after purchase.
             </p>
 
             <p className="mt-4">
@@ -191,7 +191,7 @@ export default function RefundPolicy() {
             href="/"
             className="text-[9px] uppercase tracking-[0.3em] text-[#625E55] transition-colors hover:text-[#C6A15B]"
           >
-            ← Back to The Buried Reality
+            ← Back to Homepage
           </a>
         </div>
       </div>

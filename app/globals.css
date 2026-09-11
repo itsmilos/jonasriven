@@ -40,3 +40,26 @@ body {
   animation: marquee 20s linear infinite;
   will-change: transform;
 }
+
+
+.custom-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(168, 149, 119, 0.45) transparent;
+}
+
+.custom-scroll::-webkit-scrollbar {
+  width: 4px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background: rgba(168, 149, 119, 0.45);
+  border-radius: 999px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(200, 184, 154, 0.75);
+}

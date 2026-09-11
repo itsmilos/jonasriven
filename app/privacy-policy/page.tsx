@@ -23,9 +23,9 @@ export default function PrivacyPolicy() {
             </h2>
 
             <p>
-              Welcome to The Buried Reality. We respect your privacy and are
-              committed to protecting the personal information you provide when
-              using our website, purchasing our products, or contacting us.
+              Welcome to Reality Without Witnesses. We respect your privacy and
+              are committed to protecting the personal information you provide
+              when using our website, purchasing our products, or contacting us.
             </p>
 
             <p className="mt-4">
@@ -113,10 +113,10 @@ export default function PrivacyPolicy() {
             </h2>
 
             <p>
-              The Buried Reality is primarily offered as a digital product.
-              Information such as your email address may be used to provide
-              access to your purchased product and to send information related
-              to your order.
+              Reality Without Witnesses is primarily offered as a digital
+              product. Information such as your email address may be used to
+              provide access to your purchased product and to send information
+              related to your order.
             </p>
 
             <p className="mt-4">
@@ -250,7 +250,7 @@ export default function PrivacyPolicy() {
             href="/"
             className="text-[9px] uppercase tracking-[0.3em] text-[#625E55] transition-colors hover:text-[#C6A15B]"
           >
-            ← Back to The Buried Reality
+            ← Back to Homepage
           </a>
         </div>
       </div>
