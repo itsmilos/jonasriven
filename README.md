@@ -1,36 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+The Buried Reality — Jonas Riven
 
-## Getting Started
+A modern personal author website built for **Jonas Riven** to present and promote his e-book, *The Buried Reality*.
 
-First, run the development server:
+The website combines a dark editorial aesthetic with subtle animations, interactive UI elements, and a focused product presentation designed around the book and its story.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+✦ Overview
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+The goal of the project was to create a distinctive digital presence for the author while keeping the experience centered around the book.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+The website includes:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Author introduction and personal branding
+- E-book showcase
+- Book cover and product presentation
+- Story / book information
+- Purchase call-to-action
+- Responsive navigation
+- Interactive UI elements and animations
+- Responsive design across desktop, tablet, and mobile
+- SEO-focused metadata and page structure
 
-## Learn More
+✦ Design
 
-To learn more about Next.js, take a look at the following resources:
+The visual direction was built around a dark, cinematic aesthetic to complement the themes of *The Buried Reality*.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Visual direction
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Dark background
+- Gold / warm accent colors
+- Editorial typography
+- Atmospheric visual effects
+- Minimal but expressive animations
+- High contrast UI
+- Responsive layouts
 
-## Deploy on Vercel
+The interface was intentionally kept focused so the book remains the main visual and commercial element of the website.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+✦ Tech Stack
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+**Frontend**
+- Next.js
+- React
+- TypeScript
+- Tailwind CSS
+
+**UI & Animation**
+- Framer Motion
+- Custom CSS animations
+- Responsive UI components
+
+**Development**
+- Git
+- GitHub
+- Vercel
+
+✦ Key Features
+
+Book Showcase
+
+A dedicated presentation of *The Buried Reality*, including the cover, description, and purchase-focused calls to action.
+
+Interactive UI
+
+Subtle motion and interactive elements are used throughout the site to create a more engaging experience without distracting from the content.
+
+esponsive Design
+
+The website is designed to provide a consistent experience across:
+
+- Desktop
+- Laptop
+- Tablet
+- Mobile
+
+### SEO
+
+The project includes structured metadata, optimized page content, semantic HTML, and responsive performance considerations to improve discoverability.
+
+✦ Project Structure
+
+app/
+├── components/
+├── products/
+├── layout.tsx
+├── page.tsx
+└── globals.css
+
+public/
+├── images/
+└── assets/
