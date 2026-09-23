@@ -1,91 +1,173 @@
-The Buried Reality — Jonas Riven
+# Jonas Riven — Author Website
 
-A modern personal author website built for **Jonas Riven** to present and promote his e-book, *The Buried Reality*.
+A cinematic author website and digital product experience designed around storytelling, personal branding, and e-book sales.
 
-The website combines a dark editorial aesthetic with subtle animations, interactive UI elements, and a focused product presentation designed around the book and its story.
+The project was built as a complete production-ready web experience rather than a static landing page. It combines a dark editorial visual direction with responsive layouts, atmospheric effects, interactive elements, and a focused digital product journey.
 
-✦ Overview
+## ✨ Overview
 
-The goal of the project was to create a distinctive digital presence for the author while keeping the experience centered around the book.
+Jonas Riven is a personal author website created to establish a strong author identity, introduce *The Buried Reality*, and guide visitors toward the digital product.
 
-The website includes:
+The experience focuses on:
 
-- Author introduction and personal branding
-- E-book showcase
-- Book cover and product presentation
-- Story / book information
-- Purchase call-to-action
-- Responsive navigation
-- Interactive UI elements and animations
-- Responsive design across desktop, tablet, and mobile
-- SEO-focused metadata and page structure
+* Storytelling and editorial presentation
+* Personal branding
+* Book discovery
+* Digital product presentation
+* Conversion-focused UX
+* Responsive design
+* Performance and SEO
 
-✦ Design
+## 🚀 Features
 
-The visual direction was built around a dark, cinematic aesthetic to complement the themes of *The Buried Reality*.
+* Cinematic author-focused homepage
+* Dark editorial visual direction
+* Responsive desktop, tablet, and mobile layouts
+* Book presentation and product information
+* E-book purchase journey
+* Announcement bar
+* Recent activity / social proof elements
+* Interactive navigation
+* Responsive mobile sidebar
+* Smooth UI animations
+* Optimized imagery
+* SEO metadata
+* Responsive typography
+* Mobile-first implementation
 
-Visual direction
+## 🛠️ Tech Stack
 
-- Dark background
-- Gold / warm accent colors
-- Editorial typography
-- Atmospheric visual effects
-- Minimal but expressive animations
-- High contrast UI
-- Responsive layouts
+### Frontend
 
-The interface was intentionally kept focused so the book remains the main visual and commercial element of the website.
+* **Next.js** — React framework and application architecture
+* **React** — Component-based UI
+* **TypeScript** — Type-safe development
+* **Tailwind CSS** — Styling and responsive layouts
 
-✦ Tech Stack
+### Design
 
-**Frontend**
-- Next.js
-- React
-- TypeScript
-- Tailwind CSS
+* **Figma** — UI/UX design and visual direction
 
-**UI & Animation**
-- Framer Motion
-- Custom CSS animations
-- Responsive UI components
+### Development
 
-**Development**
-- Git
-- GitHub
-- Vercel
+* **Git & GitHub** — Version control
+* **Vercel** — Deployment
 
-✦ Key Features
+## 📁 Project Structure
 
-Book Showcase
+```text
+jonas-riven/
+├── app/
+│   ├── components/
+│   ├── products/
+│   ├── layout.tsx
+│   ├── page.tsx
+│   └── globals.css
+│
+├── public/
+│   ├── images/
+│   └── ...
+│
+├── package.json
+├── tsconfig.json
+├── next.config.ts
+└── README.md
+```
 
-A dedicated presentation of *The Buried Reality*, including the cover, description, and purchase-focused calls to action.
+## ⚙️ Getting Started
 
-Interactive UI
+### Prerequisites
 
-Subtle motion and interactive elements are used throughout the site to create a more engaging experience without distracting from the content.
+* Node.js 18+
+* npm
 
-esponsive Design
+### 1. Clone the repository
 
-The website is designed to provide a consistent experience across:
+```bash
+git clone https://github.com/itsmilos/jonas-riven.git
+```
 
-- Desktop
-- Laptop
-- Tablet
-- Mobile
+### 2. Navigate into the project
 
-### SEO
+```bash
+cd jonas-riven
+```
 
-The project includes structured metadata, optimized page content, semantic HTML, and responsive performance considerations to improve discoverability.
+### 3. Install dependencies
 
-✦ Project Structure
+```bash
+npm install
+```
 
-app/
-├── components/
-├── products/
-├── layout.tsx
-├── page.tsx
-└── globals.css
+### 4. Start the development server
 
-public/
-├── images/
-└── assets/
+```bash
+npm run dev
+```
+
+The application will be available at:
+
+```text
+http://localhost:3000
+```
+
+## 📦 Available Scripts
+
+```bash
+npm run dev
+npm run build
+npm run start
+npm run lint
+```
+
+## 🎨 Design Direction
+
+The visual direction was designed around a dark, cinematic and mysterious atmosphere.
+
+The interface uses:
+
+* Dark backgrounds
+* Gold and warm accent tones
+* Editorial typography
+* Cinematic imagery
+* Atmospheric visual effects
+* Subtle motion
+* Strong visual hierarchy
+* Focused calls to action
+
+## 📱 Responsive Experience
+
+The website adapts across:
+
+* Desktop
+* Laptop
+* Tablet
+* Mobile
+
+Navigation, typography, imagery, spacing, and interactions are optimized for different screen sizes.
+
+## 🔍 Performance & SEO
+
+The project includes:
+
+* Optimized images
+* Semantic HTML
+* Page metadata
+* Responsive assets
+* Clean URL structure
+* SEO-focused content
+* Production-ready Next.js architecture
+
+## 🌐 Live Website
+
+**https://jonasriven.com**
+
+## 📄 License
+
+This project is a personal portfolio/client project.
+
+The source code is provided for demonstration purposes. Assets, branding, imagery, and written content may belong to their respective owners and are not licensed for reuse.
+
+---
+
+Built with Next.js, TypeScript, and Tailwind CSS.
