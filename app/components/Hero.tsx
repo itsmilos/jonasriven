@@ -1,164 +1,181 @@
-import Image from "next/image";
+"use client";
+
 import Link from "next/link";
+import { ShieldAlert, Volume2 } from "lucide-react";
+import { useRef, useState } from "react";
 
 export default function Hero() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [soundEnabled, setSoundEnabled] = useState(false);
+
+  async function enableSound() {
+    const video = videoRef.current;
+
+    if (!video) return;
+
+    try {
+      video.muted = false;
+      video.volume = 1;
+      await video.play();
+      setSoundEnabled(true);
+    } catch {
+      video.muted = true;
+      setSoundEnabled(false);
+    }
+  }
+
   return (
-    <main className="min-h-screen overflow-hidden bg-[#080807] text-[#E8E0D0]">
-      <section
-        aria-labelledby="hero-title"
-        className="relative flex min-h-screen items-center overflow-hidden"
-      >
-        <div className="absolute left-[70%] top-[45%] h-[500px] w-[500px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#C6A15B]/[0.07] blur-[150px]" />
+    <section className="relative min-h-screen overflow-hidden bg-[#080807] text-[#E8E0D0]">
+      <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_70%_45%,rgba(198,161,91,0.09),transparent_55%)]" />
 
-        <div className="absolute bottom-[-200px] left-[-100px] h-[450px] w-[450px] rounded-full bg-[#80652F]/[0.05] blur-[130px]" />
+      <div className="relative mx-auto flex min-h-screen max-w-[1600px] flex-col justify-center px-5 py-24 sm:px-8 lg:px-14">
+        <div className="mb-12 flex items-center justify-between">
+          <Link
+            href="/"
+            className="text-sm font-medium tracking-[0.3em] text-[#C6A15B]"
+          >
+            JONAS RIVEN
+          </Link>
 
-        <div className="pointer-events-none absolute inset-0 opacity-[0.03] [background-image:url('data:image/svg+xml,%3Csvg_viewBox=%220_0_180_180%22_xmlns=%22http://www.w3.org/2000/svg%22%3E%3Cfilter_id=%22noise%22%3E%3CfeTurbulence_type=%22fractalNoise%22_baseFrequency=%22.8%22_numOctaves=%223%22_stitchTiles=%22stitch%22/%3E%3C/filter%3E%3Crect_width=%22100%25%22_height=%22100%25%22_filter=%22url(%23noise)%22_opacity=%22.8%22/%3E%3C/svg%3E')]" />
+          <span className="border border-[#C6A15B]/30 px-3 py-2 text-[10px] uppercase tracking-[0.25em] text-[#C6A15B]/80">
+            First Edition · 2026
+          </span>
+        </div>
 
-        <div className="absolute left-1/2 top-0 hidden h-full w-px bg-[#C6A15B]/[0.06] lg:block" />
-
-        <div className="relative z-10 mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-16 px-6 pb-20 pt-32 lg:grid-cols-2 lg:px-10 lg:pb-0 lg:pt-20">
-          <div className="max-w-2xl">
-            <div className="mb-8 flex items-center gap-4">
-              <span aria-hidden="true" className="h-px w-12 bg-[#C6A15B]" />
-
-              <span className="text-[10px] font-medium uppercase tracking-[0.35em] text-[#C6A15B]">
-                A Forbidden Revelation
+        <div className="grid items-center gap-14 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
+          <div className="relative z-10">
+            <div className="mb-7 flex items-center gap-3">
+              <span className="h-px w-10 bg-[#C6A15B]" />
+              <span className="text-xs uppercase tracking-[0.3em] text-[#C6A15B]">
+                A story beyond perception
               </span>
             </div>
 
-            <h1
-              id="hero-title"
-              className="font-serif text-[64px] font-medium leading-[0.84] tracking-[-0.055em] sm:text-[78px] md:text-[92px] lg:text-[104px]"
-            >
-              <span className="text-[#E8E0D0]">REALITY</span>
+            <h1 className="max-w-2xl text-5xl font-light leading-[1.06] tracking-[-0.045em] sm:text-6xl lg:text-7xl xl:text-8xl">
+              Reality
               <br />
-
-              <span className="text-[#E8E0D0]">WITHOUT</span>
+              <span className="font-normal italic text-[#C6A15B]">Without</span>
               <br />
-
-              <span className="bg-gradient-to-r from-[#80652F] via-[#E0C27A] to-[#9A7938] bg-clip-text text-transparent">
-                WITNESSES
-              </span>
+              Witnesses
             </h1>
 
-            <div className="mt-10 max-w-xl">
-              <h2 className="text-xs font-medium uppercase tracking-[0.2em] text-[#C6A15B]">
-                Discover Reality Without Witnesses, the book they tried to bury.
-              </h2>
+            <p className="mt-8 max-w-lg text-base leading-8 text-[#E8E0D0]/60 sm:text-lg">
+              What remains of reality when there is no one left to observe it?
+              Step beyond the familiar and question everything you thought you
+              knew.
+            </p>
 
-              <p className="mt-3 text-xs font-medium uppercase tracking-[0.2em] text-[#8F8A7D]">
-                The book leaked from inside the elite.
-              </p>
-
-              <p className="mt-5 text-base leading-7 text-[#8F8A7D] sm:text-lg sm:leading-8">
-                Hidden methods they never intended you to learn.
-                <br className="hidden sm:block" />
-                Jonas Riven broke his oath and exposed the buried reality.
-              </p>
-
-              <p className="mt-4 text-sm leading-6 text-[#625E55]">
-                What was meant to remain hidden is now in your hands.
-              </p>
-            </div>
-
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+            <div className="mt-10 flex flex-wrap items-center gap-5">
               <Link
-                href="/products/reality-without-witnesses"
-                className="group inline-flex items-center justify-center gap-4 bg-[#C6A15B] px-8 py-4 text-[10px] font-bold uppercase tracking-[0.22em] text-[#080807] transition duration-300 hover:bg-[#E0C27A]"
-                aria-label="Get Reality Without Witnesses book"
+                href="#discover"
+                className="group inline-flex items-center gap-4 bg-[#C6A15B] px-7 py-4 text-xs font-semibold uppercase tracking-[0.2em] text-[#080807] transition-colors hover:bg-[#E0C27A]"
               >
-                Get The Book
-                <span
-                  aria-hidden="true"
-                  className="text-base transition-transform duration-300 group-hover:translate-x-1"
-                >
+                Discover the book
+                <span className="transition-transform group-hover:translate-x-1">
                   →
                 </span>
               </Link>
+
+              <span className="text-xs uppercase tracking-[0.18em] text-[#E8E0D0]/40">
+                An exploration of reality
+              </span>
             </div>
 
-            <div className="mt-14 flex items-center gap-6 border-t border-[#C6A15B]/10 pt-6 sm:gap-8">
+            <div className="mt-14 grid max-w-md grid-cols-2 gap-8 border-t border-[#E8E0D0]/10 pt-6">
               <div>
-                <p className="text-[8px] uppercase tracking-[0.25em] text-[#625E55]">
-                  Author
+                <p className="text-[10px] uppercase tracking-[0.25em] text-[#E8E0D0]/40">
+                  The author
                 </p>
-
-                <p className="mt-1.5 text-sm text-[#B8B0A0]">Jonas Riven</p>
+                <p className="mt-2 text-sm tracking-wide">Jonas Riven</p>
               </div>
 
-              <div aria-hidden="true" className="h-8 w-px bg-[#C6A15B]/10" />
-
               <div>
-                <p className="text-[8px] uppercase tracking-[0.25em] text-[#625E55]">
-                  Edition
+                <p className="text-[10px] uppercase tracking-[0.25em] text-[#E8E0D0]/40">
+                  Classification
                 </p>
-
-                <p className="mt-1.5 text-sm text-[#B8B0A0]">First Release</p>
-              </div>
-
-              <div aria-hidden="true" className="h-8 w-px bg-[#C6A15B]/10" />
-
-              <div>
-                <p className="text-[8px] uppercase tracking-[0.25em] text-[#625E55]">
-                  Status
+                <p className="mt-2 flex items-center gap-2 text-sm tracking-wide">
+                  <ShieldAlert size={14} className="text-[#C6A15B]" />
+                  Restricted knowledge
                 </p>
-
-                <p className="mt-1.5 text-sm text-[#C6A15B]">Classified</p>
               </div>
             </div>
           </div>
 
-          <section
-            id="book"
-            aria-label="The Buried Reality book cover"
-            className="relative flex min-h-[550px] items-center justify-center lg:min-h-[700px]"
-          >
-            <div className="group relative w-[400px] rotate-[-6deg] transition-all duration-700 hover:rotate-[-2deg] sm:w-[500px] lg:w-[600px]">
-              <div
-                aria-hidden="true"
-                className="absolute left-1/2 top-1/2 h-[75%] w-[75%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[#C6A15B]/20 blur-[100px]"
-              />
+          <div className="relative mx-auto w-full max-w-[800px] lg:ml-auto lg:mr-0">
+            <div className="absolute -inset-5 bg-[#C6A15B]/5 blur-3xl" />
 
-              <div
-                aria-hidden="true"
-                className="absolute left-1/2 top-[55%] h-[70%] w-[55%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-black/80 blur-[70px]"
-              />
+            <div className="relative overflow-hidden border border-[#C6A15B]/25 bg-[#0c0c0a] shadow-[0_0_80px_rgba(0,0,0,0.45)]">
+              <div className="flex items-center justify-between border-b border-[#C6A15B]/20 px-4 py-3 sm:px-5">
+                <div className="flex items-center gap-3">
+                  <span className="h-2 w-2 animate-pulse rounded-full bg-[#C6A15B]" />
+                  <span className="text-[9px] uppercase tracking-[0.25em] text-[#E8E0D0]/60 sm:text-[10px]">
+                    Visual transmission
+                  </span>
+                </div>
 
-              <Image
-                src="/ebook11.webp"
-                alt="Reality Without Witnesses book by Jonas Riven"
-                width={800}
-                height={1200}
-                priority
-                className="relative z-10 h-auto w-full object-contain drop-shadow-[0_35px_45px_rgba(0,0,0,0.85)] transition-transform duration-700 group-hover:scale-[1.02]"
-              />
+                <span className="text-[9px] uppercase tracking-[0.2em] text-[#C6A15B]/70 sm:text-[10px]">
+                  001 / CLASSIFIED
+                </span>
+              </div>
+
+              <div className="relative aspect-video w-full bg-black">
+                <video
+                  ref={videoRef}
+                  autoPlay
+                  muted={!soundEnabled}
+                  loop
+                  playsInline
+                  controls={false}
+                  preload="auto"
+                  className="absolute inset-0 h-full w-full object-cover"
+                >
+                  <source src="/trailer.mp4" type="video/mp4" />
+                </video>
+
+                {!soundEnabled && (
+                  <button
+                    type="button"
+                    onClick={enableSound}
+                    className="absolute right-3 top-3 z-10 inline-flex items-center gap-2 border border-[#C6A15B]/50 bg-black/75 px-3 py-2.5 text-[9px] font-medium uppercase tracking-[0.18em] text-[#E8E0D0] backdrop-blur-sm transition-colors hover:border-[#C6A15B] hover:bg-[#C6A15B] hover:text-black sm:right-5 sm:top-5 sm:px-4 sm:text-[10px]"
+                    aria-label="Enable trailer sound"
+                  >
+                    <Volume2 size={14} />
+                    Tap for sound
+                  </button>
+                )}
+
+                {soundEnabled && (
+                  <div className="absolute right-3 top-3 z-10 flex items-center gap-2 border border-[#C6A15B]/40 bg-black/70 px-3 py-2 text-[9px] uppercase tracking-[0.18em] text-[#C6A15B] sm:right-5 sm:top-5 sm:text-[10px]">
+                    <Volume2 size={14} />
+                    Sound on
+                  </div>
+                )}
+              </div>
+
+              <div className="flex items-center justify-between gap-4 border-t border-[#C6A15B]/20 px-4 py-3 sm:px-5">
+                <span className="text-[9px] uppercase tracking-[0.2em] text-[#E8E0D0]/40 sm:text-[10px]">
+                  Reality is not what it seems
+                </span>
+
+                <span className="shrink-0 text-[9px] uppercase tracking-[0.2em] text-[#C6A15B]/70 sm:text-[10px]">
+                  Transmission active
+                </span>
+              </div>
             </div>
 
-            <div className="absolute bottom-4 right-0 max-w-[230px] border-l border-[#C6A15B]/50 pl-5 sm:right-2 lg:bottom-8">
-              <blockquote className="font-serif text-lg italic leading-6 text-[#A9A190]">
-                “The truth was never lost.
-                <br />
-                It was buried.”
-              </blockquote>
-
-              <p className="mt-3 text-[8px] uppercase tracking-[0.28em] text-[#625E55]">
-                — Jonas Riven
-              </p>
+            <div className="mt-4 flex items-center justify-between text-[9px] uppercase tracking-[0.2em] text-[#E8E0D0]/30">
+              <span>Confidential material</span>
+              <span>Observe carefully</span>
             </div>
-          </section>
+          </div>
         </div>
 
-        <div className="absolute bottom-8 left-1/2 hidden -translate-x-1/2 items-center gap-4 md:flex">
-          <span className="text-[8px] uppercase tracking-[0.35em] text-[#625E55]">
-            Scroll to uncover
-          </span>
-
-          <div
-            aria-hidden="true"
-            className="h-10 w-px bg-gradient-to-b from-[#C6A15B]/40 to-transparent"
-          />
+        <div className="mt-16 flex items-center gap-4 self-center text-[9px] uppercase tracking-[0.3em] text-[#E8E0D0]/30 lg:mt-12">
+          <span className="h-px w-8 bg-[#C6A15B]/40" />
+          There is more beneath the surface
+          <span className="h-px w-8 bg-[#C6A15B]/40" />
         </div>
-      </section>
-    </main>
+      </div>
+    </section>
   );
 }
